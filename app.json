@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/profile/profile"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Yuan_Resume",
+    "navigationBarTextStyle":"black"
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

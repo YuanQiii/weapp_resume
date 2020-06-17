@@ -1,0 +1,6 @@
+<view skMain>
+  <view class="skItem {{isLight?'light':'dark'}}" wx:for="{{skills}}" wx:for-index="key" wx:for-item="value" wx:key="{{key}}">
+{{key}}：
+{{value}}
+  </view>
+</view>

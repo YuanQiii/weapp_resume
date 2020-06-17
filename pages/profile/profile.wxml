@@ -1,0 +1,34 @@
+<view class="main {{isLight?'light':'dark'}}">
+  <view id="stars" class="{{isLight?'light':'dark'}}"></view>
+  <view id="stars2" class="{{isLight?'light':'dark'}}"></view>
+  <view id="stars3" class="{{isLight?'light':'dark'}}"></view>
+  <view class="nav">
+    <view class="sw" bindtap='themeChange'>
+      <view class="theme-switch">
+        <view class="switch {{isLight?'':'switched'}}"></view>
+      </view>
+    </view>
+    <text wx:for="{{list}}" wx:key="index" bindtap="navChange" data-operation="{{index}}" class="nav-item {{currentIndex==index?'active':''}} {{isLight?'light':'dark'}}">
+      <text class="lis">{{item}}</text>
+    </text>
+  </view>
+  <view class="article">
+    <swiper circular="true" duration="200" bindchange="swiperChange" current="{{currentIndex}}">
+      <swiper-item class="sitem" item-id="">
+        <view class="head">
+          <info isLight='{{isLight}}'></info>
+        </view>
+      </swiper-item>
+      <swiper-item class="sitem" item-id="">
+        <view class="head">
+          <project isLight='{{isLight}}'></project>
+        </view>
+      </swiper-item>
+      <swiper-item class="sitem" item-id="">
+        <view class="head">
+          <skill isLight='{{isLight}}'></skill>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

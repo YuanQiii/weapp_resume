@@ -1,0 +1,6 @@
+<view class="sMain">
+  <text class="sItem {{isLight?'light':'dark'}}" wx:for="{{sum}}" wx:for-index="key" wx:for-item="value" wx:key="{{key}}" >
+{{key}}：
+{{value}}
+  </text>
+</view>

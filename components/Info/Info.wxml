@@ -1,0 +1,22 @@
+<view class="iMain">
+    <view bindtap='heightChange' data-operation='0' class="title {{isLight?'light':'dark'}} {{isShow[0]?'active':''}}">
+        {{mine[0]}}
+    </view>
+    <view style="max-height: {{isShow[0]?'105vh':'0'}}" class="content">
+            <view class="iItem {{isLight?'light':'dark'}}" wx:for="{{infos}}" wx:for-index="key" wx:for-item="value" wx:key="key"
+            style="opacity: {{isShow[0]?'1':'0'}}">
+
+        {{value}}
+
+      
+    </view>
+    </view>
+
+    <view bindtap='heightChange' data-operation='1' class="title {{isLight?'light':'dark'}} {{isShow[1]?'active':''}}" >
+        {{mine[1]}}
+    </view>
+    <view class="sumItem" style="max-height: {{isShow[1]?'80vh':'0'}}; opacity: {{isShow[1]?'1':'0'}}">
+    <sum isLight='{{isLight}}'></sum>
+    </view>
+</view>
+

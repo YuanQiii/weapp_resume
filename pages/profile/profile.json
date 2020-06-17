@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "info": "../../components/Info/Info",
+    "project": "../../components/Project/Project",
+    "skill": "../../components/Skill/Skill"
+  }
+}

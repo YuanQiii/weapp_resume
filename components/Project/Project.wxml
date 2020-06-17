@@ -1,0 +1,16 @@
+<view class="pMain">
+  <view class="p1">
+    <view wx:for="{{Ptitle}}" wx:for-index="key" wx:for-item="value" wx:key="{{key}}" 
+    class="p1Title  {{isLight?'light':'dark'}}" >
+      <view bindtap='hChange' data-operation='{{key}}' class="title {{isShow[key]?'active':''}}">
+        {{value}}
+      </view>   
+      <view style="max-height:{{isShow[key]?'110vh':'0'}}" class="pp">
+        <view class="p1Content {{isLight?'light':'dark'}}" wx:for="{{Pcontent[key]}}" wx:for-index="key1" wx:for-item="value1" wx:key="{{key1}}" style="opacity:{{isShow[key]?1:0}}">
+{{key1}}：
+{{value1}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
